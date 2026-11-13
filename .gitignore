@@ -1,0 +1,11 @@
+# Local environment settings and secrets
+.env
+.env.*
+!.env.example
+
+# Local n8n data, if bind-mounted
+.n8n/
+
+# OS-generated files
+.DS_Store
+Thumbs.db

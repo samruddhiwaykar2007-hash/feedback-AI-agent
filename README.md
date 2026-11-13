@@ -1,4 +1,4 @@
-# Feedback AI Agent
+💡# Feedback AI Agent
 
 An n8n workflow that classifies customer feedback and routes it to connected services for storage and follow-up.
 
@@ -6,7 +6,7 @@ An n8n workflow that classifies customer feedback and routes it to connected ser
 
 Feedback AI Agent is a hands-on n8n automation project for processing feedback submitted through an n8n form. It uses a Google Gemini model to classify each submission, then routes it to category-specific Airtable, Slack, and Gmail steps.
 
-The workflow is intended to make feedback easier to organize and bring repeated complaints to a team's attention. It is an integration prototype, not a hosted application: the workflow is inactive in the included export and requires service credentials and configuration before use.
+🚀The workflow is intended to make feedback easier to organize and bring repeated complaints to a team's attention. It is an integration prototype, not a hosted application: the workflow is inactive in the included export and requires service credentials and configuration before use.
 
 ## How It Works
 

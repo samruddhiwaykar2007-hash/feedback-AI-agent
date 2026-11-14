@@ -52,7 +52,6 @@
     },
     {
       "parameters": {
-        "modelName": "models/gemini-3.5-flash",
         "options": {}
       },
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
@@ -65,8 +64,8 @@
       "name": "Google Gemini Chat Model",
       "credentials": {
         "googlePalmApi": {
-          "id": "WGdSlUFsI8XI5ii1",
-          "name": "Google Gemini(PaLM) Api account 8"
+          "id": "OU9OLTywAD61jWyI",
+          "name": "Google Gemini(PaLM) Api account 9"
         }
       }
     },
@@ -365,7 +364,9 @@
           "cachedResultName": "complain"
         },
         "text": "={{ $json.fields.Name }}\n\n{{ $json.fields.Email }}\n\n{{ $json.fields.feedback }}\n\nNeeds high attention! many complaints are been submitted regarding this type of complaint\n",
-        "otherOptions": {}
+        "otherOptions": {
+          "includeLinkToWorkflow": false
+        }
       },
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.7,
@@ -394,7 +395,9 @@
           "cachedResultName": "feature-addition-request"
         },
         "text": "={{ $json.fields.Name }}\n\n{{ $json.fields.Email }}\n\n{{ $json.fields.feedback }}",
-        "otherOptions": {}
+        "otherOptions": {
+          "includeLinkToWorkflow": false
+        }
       },
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.7,
@@ -418,7 +421,9 @@
         "subject": "hey ! we have taken your complaint in notice",
         "emailType": "text",
         "message": "=Hey {{ $('On form submission').item.json['full name'] }} !  we have taken your feedback and will definately work on it . thank you for giving you value time in giving the feedback .",
-        "options": {}
+        "options": {
+          "appendAttribution": false
+        }
       },
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.2,
@@ -525,7 +530,9 @@
         "subject": "underconsideration notice",
         "emailType": "text",
         "message": "=hey  {{ $('Merge').item.json['full name'] }} ! \n\nThank you for your feedback. We have considered your request and will update it in our system for further review.\n\nRegards,\nFeedback Team",
-        "options": {}
+        "options": {
+          "appendAttribution": false
+        }
       },
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.2,
@@ -676,8 +683,8 @@
       "name": "Complaint1",
       "credentials": {
         "airtableTokenApi": {
-          "id": "btcfIwGN1zEeQUSD",
-          "name": "Airtable Personal Access Token account"
+          "id": "KpdMvtltTI6nqstN",
+          "name": "Airtable Personal Access Token account 2"
         }
       }
     },
@@ -692,7 +699,9 @@
           "cachedResultName": "complain"
         },
         "text": "={{ $json.fields.Name }}\n\n{{ $json.fields.Email }}\n\n{{ $json.fields.feedback }}",
-        "otherOptions": {}
+        "otherOptions": {
+          "includeLinkToWorkflow": false
+        }
       },
       "type": "n8n-nodes-base.slack",
       "typeVersion": 2.7,
@@ -716,7 +725,9 @@
         "subject": "thank you feedback",
         "emailType": "text",
         "message": "=hey  {{ $('On form submission').item.json['full name'] }} ! \n\nthank you for your positive feedback as it encourages us to be more prodctive in this field.",
-        "options": {}
+        "options": {
+          "appendAttribution": false
+        }
       },
       "type": "n8n-nodes-base.gmail",
       "typeVersion": 2.2,
@@ -880,8 +891,8 @@
       "name": "Update record",
       "credentials": {
         "airtableTokenApi": {
-          "id": "btcfIwGN1zEeQUSD",
-          "name": "Airtable Personal Access Token account"
+          "id": "KpdMvtltTI6nqstN",
+          "name": "Airtable Personal Access Token account 2"
         }
       }
     },
@@ -914,8 +925,8 @@
       "name": "Search records in Airtable",
       "credentials": {
         "airtableTokenApi": {
-          "id": "btcfIwGN1zEeQUSD",
-          "name": "Airtable Personal Access Token account"
+          "id": "KpdMvtltTI6nqstN",
+          "name": "Airtable Personal Access Token account 2"
         }
       }
     },
@@ -934,8 +945,8 @@
       "name": "Google Gemini Chat Model1",
       "credentials": {
         "googlePalmApi": {
-          "id": "qx2jf67nHwnOQXJv",
-          "name": "Google Gemini(PaLM) Api account 7"
+          "id": "OU9OLTywAD61jWyI",
+          "name": "Google Gemini(PaLM) Api account 9"
         }
       }
     }
@@ -1173,7 +1184,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "e2cd6827-9cb3-4cf5-a8cc-0be3068941bb",
+  "versionId": "70c6126e-d95a-4a52-9e9a-a7805d8abf30",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "2eed16e5ef3003a3011691348d08832b4235cc4dfb5c795e0bdebe813e4b4aa0"
